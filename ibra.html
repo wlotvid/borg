@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صفّي | حجز مواعيد وتنظيم الطوابير</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; background: #f2f2f2; margin: 0; padding: 0; }
+    header { background: #1e88e5; color: white; padding: 1rem; text-align: center; }
+    .container { padding: 2rem; max-width: 800px; margin: auto; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2 { color: #333; }
+    .section { margin-bottom: 2rem; }
+    label { display: block; margin-bottom: 0.5rem; }
+    select, input, button { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border-radius: 6px; border: 1px solid #ccc; }
+    button { background: #1e88e5; color: white; border: none; cursor: pointer; }
+    button:hover { background: #1565c0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>صفّي</h1>
+    <p>نظّم طابورك، بلا تعب</p>
+  </header>  <div class="container">
+    <div class="section">
+      <h2>حجز موعد</h2>
+      <label for="service">اختيار نوع المؤسسة:</label>
+      <select id="service">
+        <option>عيادة طبية</option>
+        <option>بلدية</option>
+        <option>مستشفى</option>
+        <option>مركز بريد</option>
+      </select><label for="location">الموقع:</label>
+  <input type="text" id="location" placeholder="مثال: الجلفة، باب الواد...">
+
+  <label for="date">تاريخ الموعد:</label>
+  <input type="date" id="date">
+
+  <button onclick="alert('تم حجز موعدك بنجاح!')">تأكيد الحجز</button>
+</div>
+
+<div class="section">
+  <h2>تسجيل الدخول</h2>
+  <input type="text" placeholder="رقم الهاتف أو البريد الإلكتروني">
+  <input type="password" placeholder="كلمة المرور">
+  <button>دخول</button>
+</div>
+
+<div class="section">
+  <h2>هل تمثل مؤسسة؟</h2>
+  <button>سجل كمؤسسة</button>
+</div>
+
+  </div>
+</body>
+</html>
